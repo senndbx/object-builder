@@ -1,38 +1,78 @@
-# sv
+# JSON Object Builder
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A powerful, backendless JSON object builder with live preview. Build complex JSON structures through an intuitive form interface with real-time visualization.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- 📝 **Dynamic Form Builder** - Add, remove, and configure JSON properties on the fly
+- 👁️ **Live Preview** - See your JSON structure update in real-time
+- 🔄 **Multiple Data Types** - Support for strings, numbers, booleans, and arrays
+- 📦 **Download Ready** - Export your JSON with one click
+- 🚀 **Backendless** - Runs entirely in the browser, no server required
+- ⚡ **Fast & Responsive** - Built with SvelteKit and Vite
 
-```sh
-# create a new project in the current directory
-npx sv create
+## Getting Started
 
-# create a new project in my-app
-npx sv create my-app
+### Prerequisites
+
+- Node.js 18+
+- npm, pnpm, or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/object-builder.git
+cd object-builder
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-## Developing
+Open [http://localhost:5173](http://localhost:5173) to view the app in your browser.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Usage
 
-```sh
+1. **Add Properties**: Use the "Add Field" button to create new JSON properties
+2. **Configure Fields**: Set key names, values, and data types for each property
+3. **Live Preview**: Watch your JSON structure build in real-time on the right panel
+4. **Export**: Download your completed JSON file with the download button
+
+## Tech Stack
+
+- **Framework**: SvelteKit 2.0
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS (Dark mode)
+- **Icons**: Lucide Svelte
+- **Language**: TypeScript
+
+## Development
+
+```bash
+# Start development server
 npm run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
+# Build for production
 npm run build
+
+# Preview production build
+npm run preview
+
+# Run type checking
+npm run check
 ```
 
-You can preview the production build with `npm run preview`.
+## Contributing
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
